@@ -2,7 +2,7 @@
 
 A simple and interactive **To-Do List** web app built with **HTML, CSS, and JavaScript**. Add, complete, and delete tasks with smooth animations!
 
-[Live Demo](https://checkit.tech) -- DNS propagation may still be ongoing --
+[Live Demo](https://kikaaa151.github.io/Do-To-list/)
 
 ## Features
 
@@ -15,7 +15,7 @@ A simple and interactive **To-Do List** web app built with **HTML, CSS, and Java
 
 This app is hosted on **GitHub Pages**.
 
-1. Open your browser and go to [https://checkit.tech](https://checkit.tech).
+1. Open your browser and go to [https://kikaaa151.github.io/Do-To-list/](https://kikaaa151.github.io/Do-To-list/).
 2. Start managing your tasks!
 
 ## File Structure

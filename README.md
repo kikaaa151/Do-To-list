@@ -2,7 +2,7 @@
 
 A simple and interactive **To-Do List** web app built with **HTML, CSS, and JavaScript**. Add, complete, and delete tasks with smooth animations!
 
-[Live Demo](https://checkit.tech) <!-- DNS propagation may still be ongoing -->
+[Live Demo](https://checkit.tech) -- DNS propagation may still be ongoing --
 
 ## Features
 

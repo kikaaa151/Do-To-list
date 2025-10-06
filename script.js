@@ -28,27 +28,26 @@ function addTask() {
   doneBtn.classList.add("done-btn");
 
   doneBtn.addEventListener("click", function() {
-    li.classList.add("done");
-    doneBtn.disabled = true;
-    // Add completion animation
-    li.style.animation = "none";
-    li.style.transform = "scale(1.05)";
-    setTimeout(() => {
-      li.style.transform = "scale(1)";
-    }, 150);
-  });
+  if (li.classList.contains("done")) {
+    li.classList.remove("done");
   
-  deleteBtn.addEventListener("click", function() {
-    // Add removing class for animation
-    li.classList.add("removing");
-    
-    // Remove after animation completes
+  } else {
+    li.classList.add("done");    
     setTimeout(() => {
-      if (li.parentNode) {
-        taskList.removeChild(li);
-      }
-    }, 400); // Match the animation duration
-  });
+      li.classList.remove("completed-bounce");
+    }, 300);
+  }
+});
+
+deleteBtn.addEventListener("click", function() {
+  li.classList.remove("completed-bounce");
+  li.classList.add("removing");
+  setTimeout(() => {
+    if (li.parentNode) {
+      taskList.removeChild(li);
+    }
+  }, 400);
+});
 
   buttonContainer.appendChild(doneBtn);
   buttonContainer.appendChild(deleteBtn);
